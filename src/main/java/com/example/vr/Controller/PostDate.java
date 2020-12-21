@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import com.alibaba.fastjson.JSON;
 import org.springframework.web.client.RestTemplate;
 
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.nio.ByteBuffer;
@@ -23,11 +25,19 @@ import java.util.Map;
 @Controller
 public class PostDate {
 
-
     @RequestMapping("/greetingTest")
     @ResponseBody
-    public String greetingTest() {
+    public String greetingTest(HttpServletRequest request) {
         try {
+
+            String score = request.getParameter("score");
+            String startTime = request.getParameter("startTime");
+            String finishTime = request.getParameter("finishTime");
+            System.out.println(score);
+            System.out.println(startTime);
+            System.out.println(finishTime);
+
+            /*
             Map<Object, Object> param = MapUtil.of(new String[][]{
                     {"username", "guest"},
                     {"projectTitle", "智慧工厂虚拟实训项目"},
@@ -40,25 +50,30 @@ public class PostDate {
                     {"issuerId", "100400"},
                     {"attachmentId", "12"}
             });
+             */
+
             Map<String,String> map = new HashMap<>();
             map.put("username", "test");
             map.put("projectTitle", "传热3D&VR虚拟仿真综合实验");
             map.put("childProjectTitle","走马灯");
             map.put("status", "1");
-            map.put("score", "100");
-            map.put("startDate", "1607654747000");
-            map.put("endDate", "1607658347000");
+            map.put("score", score);
+            map.put("startDate", startTime);
+            map.put("endDate", finishTime);
             map.put("timeUsed", "60");
             map.put("issuerId", "100400");
-            String json = param.toString();
-            //将map数据转为json格式，encrty加密传入的参数是json类型的
+
             String s = JSONObject.toJSONString(map);
             String data = encrty(s);
+            /*
             String url = "http://202.205.145.156:8017/project/log/upload?xjwt=" + data;
             String result2 = HttpRequest.post(url)
                     .timeout(20000)//超时，毫秒
                     .execute().body();
-            return result2 ;
+
+             */
+            System.out.println(map.toString());
+            return "result2";
         } catch (Exception e) {
             e.printStackTrace();
             return null;

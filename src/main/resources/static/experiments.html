@@ -20,8 +20,8 @@
 				display: block;
 				margin: 1rem 0;
 			}
-			
-			.p-header{
+
+			.p-header {
 				padding: 0 2rem;
 			}
 
@@ -37,6 +37,30 @@
 				height: 60rem;
 				padding: 1rem 1rem;
 				background-color: #cccccc;
+			}
+
+			.question {
+				border: 5px solid;
+				border-radius: 15px;
+				padding: 1rem;
+			}
+
+			.submit {
+				display: block;
+				width: 92%;
+
+			}
+
+			.submit input {
+				display: inline-block;
+				width: 48%;
+				margin: 0 auto;
+			}
+
+			.submit button {
+				display: inline-block;
+				width: 48%;
+				margin: 0 auto;
 			}
 
 			.footer {
@@ -57,11 +81,11 @@
 				</div>
 				<div class="col-md-4">
 					<div class="right">
-						<div >
+						<div>
 							<h2>实验后，回答以下问题：</h2>
 							<hr />
 						</div>
-						<div>
+						<div class="question">
 							<form action="/greetingTest" method="post">
 								<div class="form-group">
 									<label for="F_8mm">1.使用8mm焦距时，需要拍摄多少张相片？</label>
@@ -79,16 +103,16 @@
 									<label for="F_24mm">4.使用24mm焦距时，需要拍摄多少张相片？</label>
 									<div class="radio">
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+											<input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1"> 1
 										</label>
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+											<input type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2"> 2
 										</label>
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+											<input type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="option3"> 3
 										</label>
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 4
+											<input type="radio" name="inlineRadioOptions1" id="inlineRadio4" value="option3"> 4
 										</label>
 									</div>
 								</div>
@@ -96,42 +120,43 @@
 									<label for="F_24mm">4.使用24mm焦距时，需要拍摄多少张相片？</label>
 									<div class="radio">
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+											<input type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1"> 1
 										</label>
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+											<input type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2"> 2
 										</label>
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+											<input type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option3"> 3
 										</label>
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 4
+											<input type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option3"> 4
 										</label>
 									</div>
 								</div>
-								
+
 								<div class="form-group">
 									<label for="F_24mm">4.使用24mm焦距时，需要拍摄多少张相片？</label>
 									<div class="radio">
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+											<input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1"> 1
 										</label>
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+											<input type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2"> 2
 										</label>
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+											<input type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3"> 3
 										</label>
 										<label class="radio-inline">
-										  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 4
+											<input type="radio" name="inlineRadioOptions3" id="inlineRadio4" value="option3"> 4
 										</label>
 									</div>
 								</div>
-								
-								<div class="center-block">
-									<button type="submit" class="btn btn-default btn-success btn-block">提交答案</button>
+
+								<div class="submit center-block">
+									<input id="start" type="button" value="开始答题" class="btn btn-default btn-info" />
+									<input id="finish" type="button" value="提交答案" class="btn btn-default btn-success">
 								</div>
-								
+
 							</form>
 						</div>
 					</div>
@@ -141,6 +166,45 @@
 				<p class="text-center">@copyright by 萍乡学院信息与计算机工程学院</p>
 			</div>
 		</div>
+
+		<script type="text/javascript">
+			var score = 0;
+			var startTime;
+			var finishTime;
+			$(function() {
+				<!--开始答题-->
+				$("#start").on("click", function() {
+					console.log("start");
+					var answer1 = $("#F_8mm").val();
+					var answer2 = $("#F_15mm").val();
+					var answer3 = $("#F_24mm").val();
+					if (answer1 == 1) score += 10;
+					if (answer2 == 2) score += 10;
+					if (answer3 == 3) score += 10;
+					console.log(score);
+					startTime = (new Date()).getTime();
+					console.log(startTime);
+				});
+				<!--提交答案-->
+				$("#finish").on("click", function() {
+					finishTime = (new Date()).getTime();
+					$.ajax({
+						type: "POST",
+						url: "/greetingTest",
+						dataType: "json",
+						data: {
+							"score": score,
+							"startTime": startTime,
+							"finishTime": finishTime,
+						},
+						success: function(msg) {
+							console.log("success");
+							console.log(msg);
+						}
+					});
+				})
+			});
+		</script>
 
 	</body>
 </html>
