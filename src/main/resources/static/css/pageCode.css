@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+/* 页码的样式 */
+.anpager {
+    font: 11px Arial, Helvetica, sans-serif;
+    margin: 5px 4px 0 0;
+    padding: 4px 5px 0;
+}
+.anpager a {
+    background: #FFFFFF;
+    border: 1px solid #3D87AC;
+    color: #3D87AC;
+    margin: 0;
+    padding: 4px 5px 1px;
+    text-decoration: none;
+}
+.anpager .cpb {
+    background: #3D87AC;
+    border: 1px solid #3D87AC;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0;
+    padding: 4px 5px 1px;
+}

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/llj.ico">
+
+    <title>全景VR教学实验 </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template 
+    <link href="css/carousel.css" rel="stylesheet">-->
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">VR Laboratory</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#" style="color:#F9F9F9">VR <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true" style="color:lightblue;"></span> Lab</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="Panorama.html" target="new">VR全景实验</a></li>
+                <li><a href="vrar.html" target="new">VR展厅/AR识图实验</a></li>            
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+ <!-- 教学单元内容开始=============================== -->	  
+  <div class="container marketing"><!-- 教学单元container marketing -->    
+      <div class="row"><!-- 教学单元前言部分row -->    
+        <div class="col-lg-12"><!-- 教学单元前言部分col-lg-12 -->   
+       	  <div class="page-header" style="text-align:center;">
+  				<h1>全景VR教学实验 <small>教学流程</small></h1>
+		  </div>
+          <p style="text-align:left; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什么是全景VR呢？全景又被称为360度全景或3D实景，是指将拍摄的水平方向360度，垂直方向180度的多张照片拼接成一张全景图像。通过后期漫游制作，让浏览者能用鼠标控制浏览的方向，可左可右、可上可下观看物体或场景，仿佛身临其境一般。全景VR漫游也是一种新兴的富媒体技术，可在制作中添加图片、声音、视频和超链接。全景VR技术优势明显，它使用最简单的方式能够全方位地展示360度球型范围内的所有景致，观者可以自由操纵任意角度互动性地观察场景，还可以添加视频、音乐、文本、超链接等多种媒体，内容丰富形式新颖，被广泛地应用于旅游、房地产等行业的各种场景的展示。720云是国内致力于全景技术应用的非常著名的云平台，其提供的全景编辑制作工具功能强大，操作简便，类似平台还有720think等平台。注意720云中所说的720全景实质上还是指360全景，即可上下左右旋转观看的全景，它是水平360°，垂直180°的全景图片，并不能叫720°全景，720云之所以这么命名720，其初衷是360度全景+360度服务。全景VR制作和播放的成本相对较低，相比三维制作，制作周期短，开发成本低，时效性强，而且对播放设备要求低，普通电脑手机均可播放。360全景图在VR作品中几乎随处可见，360全景也是我们走进虚拟现实技术领域的入门必经之路，也是我们扣响VR技术殿堂的敲门砖。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全景VR课程实验教学主要分十二个步骤进行，包括：步骤01：学生体验VR全景作品魅力；步骤02：自主学习老师给定的慕课视频等教学材料；步骤03：课上翻转，检查学生自主学习效果；学生分组，接受具体实验任务；步骤05：素材准备；步骤06：素材加工_合成全景图；步骤07：在全景云平台展示全景；步骤08：作品比武，答辩评分；步骤09：撰写实验报告；步骤10：提出新问题：Unity中如何利用全景图创建天空盒；步骤11：在VR内容开发编辑器中应用全景图；步骤12：提出更有挑战性的问题供有兴趣有能力的同学去探索。
+          </p>       
+          <hr>
+<a href="#d0"><button type="button" class="btn btn-primary">实验目标 / 实验设备</button></a>
+<a href="#d1"><button type="button" class="btn btn-danger">步骤 01</button></a>
+<a href="#d2"><button type="button" class="btn btn-primary">步骤 02</button></a>
+<a href="#d3"><button type="button" class="btn btn-success">步骤 03</button></a>
+<a href="#d4"><button type="button" class="btn btn-info">步骤 04</button></a>
+<a href="#d5"><button type="button" class="btn btn-warning">步骤 05</button></a>
+<a href="#d6"><button type="button" class="btn btn-primary">步骤 06</button></a>
+<a href="#d7"><button type="button" class="btn btn-danger">步骤 07</button></a>
+<a href="#d8"><button type="button" class="btn btn-primary">步骤 08</button></a>			
+<a href="#d9"><button type="button" class="btn btn-success">步骤 09</button></a>
+<a href="#d10"><button type="button" class="btn btn-info">步骤 10</button></a>
+<a href="#d11"><button type="button" class="btn btn-warning">步骤 11</button></a>
+<a href="#d12"><button type="button" class="btn btn-primary">步骤 12</button></a>
+          <hr>
+       </div><!-- /教学单元前言部分.col-lg-12 -->
+</div><!--/教学单元前言部分.row ==========================-->
+<a name="d0"></a>
+<div class="container" style="margin-left: -15px;"><!-- ===========第一篇container居中容器开始========= -->
+<div class="panel panel-primary"><!-- 教学单元媒体类型panel panel-primary--第一篇开始 --> 
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px; ">全景VR教学实验<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>实验目标与实验设备</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验目的：</h4>
+                    <ul style="list-style:decimal;">
+                        <li>学会使用单反/微单相机的拍摄全景素材的技巧；</li>
+                        <li>学会全景云台的安装、校准与使用；</li>
+                        <li>掌握素材拼接合成全景图的要求及技巧；</li>
+                        <li>掌握全景云平台编辑器的使用；</li>
+					    <li>初步掌握在Unity、Animater、及VR内容编辑器中应用全景图。</li>
+                    </ul>
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+   <li class="media"><!--第二个li media列表项开始-->
+   		<div class="media"><!--教学单元-教学目标-技能目标media开始-->
+            <div class="media-left">
+                <a href="#">
+                     <img class="media-object" src="images/ooopic_1444091673.png" alt="技能目标" width="64px" height="64px">
+                </a>
+            </div>
+  			<div class="media-body">
+   				<h4 class="media-heading">&nbsp;实验设备（硬件与软件）：</h4>
+    			<ul style="list-style:decimal;">
+                    <li>HTC VIVE VR眼镜 / HTC Focus 一体机</li>
+                    <li>单反 / 微单相机 / 相机，鱼眼镜头、全景云台、三脚架； </li>
+                    <li>大疆无人机 “御”Mavic 2 专业版；</li>
+                    <li>软件：PTgui、Lightroom、Photoshop、Pano2VR、Kolor KolorEyes；</li>			
+ 	 			</ul>
+          	</div><!--/media-body-->
+         </div><!--/教学单元-教学目标-技能目标media结束-->
+    </li><!--/第二个media列表项技能目标结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====-->
+    <h3>重点难点</h3>
+    <div class="media"  style="margin-left:40px;"><!--教学单元-教学目标-重点难点media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444102219.png" alt="重点难点" width="64" height="64">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;重点难点：</h4>
+                     <ul style="list-style:circle;">
+						<li>重点：全景图的拼接与合成；</li>
+						<li>难点：全景图的拼接与合成，学生作品质量意识的养成。</li>
+					</ul>
+            </div><!--/media-body-->								
+      </div><!--/教学单元-教学目标-重点难点media结束-->  
+</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--第一篇结束 -->
+   <a name="d1"></a>
+ <div class="container" style="margin-left: -15px;"><!-- ===========第二篇container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤01<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>步骤01：学生体验VR全景作品魅力</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--教学单元-教学目标-知识目标媒体列表ul media-list开始 -->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+                    <ul style="list-style:decimal;">
+                        <li>学生使用VR设备体验全景VR作品案例效果及交互方式，感受VR作品效果和交互方式。如：萍乡博物馆全景VR作品（https://720yun.com/t/cbvknq8erib）。</li>
+                        <li>理解并掌握帧的概念、帧的类型以及帧的基本操作；</li>
+                        <li>理解掌握三种补间动画的区别与联系；</li>
+                    </ul>
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+   <li class="media"><!--第二个li media列表项开始-->
+   		<div class="media"><!--教学单元-教学目标-技能目标media开始-->
+            <div class="media-left">
+                <a href="#">
+                     <img class="media-object" src="images/ooopic_1444091673.png" alt="技能目标" width="64px" height="64px">
+                </a>
+            </div>
+  			<div class="media-body">
+   				<h4 class="media-heading">&nbsp;实验设备：</h4>
+    			<ul style="list-style:decimal;">
+                    <li>HTC VIVE VR眼镜 / HTC Focus 一体机；<br/><img src="images/bwg01.jpg" width="80%" alt="萍乡博物馆" />						
+                         <p style="text-align:center; line-height:25px; font-size: 0.6em;">图1  全景VR展示实验作品_萍乡博物馆全景VR展示</p>
+						在图2中，箭头符号为足迹互动方式，还可以作为注视互动效果，教师课上用HTC VIVE PRO设备在大屏中演示，学生可以使用HTC Focus一体机观看感受VR作品效果和交互方式，作品中可添加解说和背景音乐效果。
+					</li>
+					<li>扫码观看往期作品
+						<p style="text-align:center; line-height:25px; font-size: 0.6em;">
+						    <a href="https://720yun.com/t/cbvknq8erib?scene_id=32519074" target="_blank"><img src="images/avisite_bowuguang.png" width="150" height="195" alt=""/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						    <a href="https://720yun.com/t/613jrsmfOv6?scene_id=26763477" target="_blank"><img src="images/avisite_pxxy.png" width="150" height="195" alt="_blank"/></a>&nbsp;&nbsp;&nbsp;&nbsp;		
+							<a href="https://355eenqed.720think.com/t/355eenqed?def_sid=631669" target="_blank"><img src="images/avisite_redguang.png" width="150" height="195" alt="_blank"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="https://f682gzrmd.720think.com/t/f682gzrmd?def_sid=647848" target="_blank"><img src="images/avisite_gangzuchang.png" width="150" height="195" alt=""/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="https://720yun.com/t/d9vkuerlspw?scene_id=38478874" target="_blank"><img src="images/avisite_shidongkou.png" width="150" height="195" alt=""/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					    </p></li>
+ 	 			</ul>
+          	</div><!--/media-body-->
+         </div><!--/教学单元-教学目标-技能目标media结束-->
+    </li><!--/第二个media列表项技能目标结束-->
+    </ul><!--/教学单元-教学目标-知识目标媒体列表ul media-list结束 -->
+<!--本篇教学资源开始-->
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--第二篇结束 -->
+ </div><!-- ===========第二篇div container居中容器结束========= -->
+
+ <a name="d2"></a>
+ <div class="container"><!-- ===========第三篇container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤02 <p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>步骤02：自主学习老师给定的慕课视频等教学材料</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+                    <p style="text-align:left; line-height:25px;">步骤02：自主学习老师给定的慕课视频等教学材料<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;教师提供<a href="https://mooc1.chaoxing.com/course/204352215.html" target="new">原创教程</a>及相关网络教程网址【<a href="https://bbs2.720yun.com/category/2" target="new">720云全景系列教程</a>&nbsp;/&nbsp;<a href="https://www.720think.com/index.php?g=think720&m=home&a=course" target="new">720think全景系列教程</a>】，布置学生利用课余时间自主学习。本实验中，学生需要了解全景VR作品的形式与作用，要解决如何拍摄全景素材，如何处理素材合成全景图，以及如何利用720云等全景云平台编辑器制作全景作品的足迹交互等功能，以及作品发布等技能，要教会掌握学生充分利用网络自主学习的能力。</p>	
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+   <li class="media"><!--第二个li media列表项开始-->
+   		<div class="media"><!--教学单元-教学目标-技能目标media开始-->
+            <div class="media-left">
+                <a href="#">
+                     <img class="media-object" src="images/ooopic_1444091673.png" alt="学习材料" width="64px" height="64px">
+                </a>
+            </div>
+  			<div class="media-body">
+   				<h4 class="media-heading">&nbsp;学习要点：</h4>
+    			<ul style="list-style:decimal;">
+                    <li>认识360全景；</li>
+					<li>全景素材拍摄方法；</li>
+					<li>全景素材拼接与合成技巧；</li>
+					<li>全景互动在线编辑工具的使用；</li>					
+ 	 			</ul>
+          	</div><!--/media-body-->
+         </div><!--/教学单元-教学目标-技能目标media结束-->
+    </li><!--/第二个media列表项技能目标结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====--> 
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--第三篇结束 -->
+ </div><!-- ===========第三篇div container居中容器结束========= --> 
+  <a name="d3"></a> 
+ <div class="container"><!-- ===========第四篇container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤03<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>步骤03：课上翻转，检查学生自主学习效果</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+                    <p style="text-align:left; line-height:25px;">步骤03：课上翻转，检查学生自主学习效果<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;教师在课上以问答形式检查学生自主学习情况，并讲述的项目制作步骤、制作规范与要求，强调易出错的地方，强调作品的质量意识。<br/></p>
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+   <li class="media"><!--第二个li media列表项开始-->
+   		<div class="media"><!--教学单元-教学目标-技能目标media开始-->
+            <div class="media-left">
+                <a href="#">
+                     <img class="media-object" src="images/ooopic_1444091673.png" alt="技能目标" width="64px" height="64px">
+                </a>
+            </div>
+  			<div class="media-body">
+   				<h4 class="media-heading">&nbsp;解决问题：</h4>
+    			<ul style="list-style:decimal;">
+                    <li>什么是360度全景？</li>
+                    <li>全景的特点与优势？ </li>
+                    <li>全景图的应用领域？</li>
+                    <li>制作全景VR作品的流程？</li>
+                    <li>全景素材照片拍摄技巧；</li>
+                    <li>全景素材的拼接与合成技巧；</li>
+					<li>全景系统编辑器工具使用；</li>
+					<li>全景作品的上传与发布。</li>
+ 	 			</ul>
+          	</div><!--/media-body-->
+         </div><!--/教学单元-教学目标-技能目标media结束-->
+    </li><!--/第二个media列表项技能目标结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====-->
+    <hr>       
+	</div><!-- /.col-lg-3案例素材版块结束 -->	
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--第四篇结束 -->
+ </div><!-- ===========第四篇div container居中容器结束========= -->
+   <a name="d4"></a>
+ <div class="container"><!-- ===========第五篇container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤04<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>步骤04：学生分组，确定具体实验任务</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+                    <p style="text-align:left; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学生分组，确定具体任务。分组讨论作品设计方案及交互方式。</p>  
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+   <li class="media"><!--第二个li media列表项开始-->
+   		<div class="media"><!--教学单元-教学目标-技能目标media开始-->
+            <div class="media-left">
+                <a href="#">
+                     <img class="media-object" src="images/ooopic_1444091673.png" alt="技能目标" width="64px" height="64px">
+                </a>
+            </div>
+  			<div class="media-body">
+   				<h4 class="media-heading">&nbsp;分组方法：</h4>
+    			<ul style="list-style:decimal;">
+                    <li>每组2~4人；</li>
+                    <li>各组学生安排按自主组合+教师微调方式；</li>
+                    <li>全景课程实验场景尽量选校内或学校周边场景进行； </li>
+                    <li>各组全景制作任务各不相同；</li>
+ 	 			</ul>
+          	</div><!--/media-body-->
+         </div><!--/教学单元-教学目标-技能目标media结束-->
+    </li><!--/第二个media列表项技能目标结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====-->
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--第五篇结束 -->
+ </div><!-- ===========第五篇div container居中容器结束========= -->
+   <a name="d5"></a> 
+ <div class="container"><!-- ===========第六篇container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤05<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>步骤05：全景拍摄素材准备</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+                    <p style="text-align:left; line-height:25px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学生利用课后时间使用脚架、专用云台、相机或手机拍摄素材图，注意单张全景需拍摄的数量、间隔角度和图片保存格式；演示无人机全景拍摄方法，需无人机拍摄的素材由班级统一安排人员操作。</p>
+	  <p style="text-align:center"><img src="images/paishi.jpg" width="80%" alt="全景拍摄"/></p>
+	  <p style="text-align:center; line-height:25px; font-size: 0.6em;">图2  使用全景云台拍摄素材</p>      
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+   <li class="media"><!--第二个li media列表项开始-->
+   		<div class="media"><!--教学单元-教学目标-技能目标media开始-->
+            <div class="media-left">
+                <a href="#">
+                     <img class="media-object" src="images/ooopic_1444091673.png" alt="拍摄技巧" width="64px" height="64px">
+                </a>
+            </div>
+  			<div class="media-body">
+   				<h4 class="media-heading">&nbsp;拍摄技巧：</h4>
+    			 <p style="text-align:left; line-height:25px;"><span style="color: #0C2E01">
+		  温馨提示：<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拍摄时合成单张全景图所需的照片的数量以及相邻照片拍摄所间隔的角度，拍摄时选择合适的相机设置参数选择合适的曝光。拍摄时保存的图片格式选择RAW，后期进行图片拼接时，可将同一组内的图片导入到Lightroom内进行统一的调色处理，并将处理好的图片导出为JPG格式。</span>
+		  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附件：<a href="https://bbs2.720yun.com/article?id=128" target="new">零基础学全景课程拍摄及航拍教程</a><br/>
+		  720专业版云台视频教程【https://pan.baidu.com/s/1AHKMCAk_yXNVu8w7EynwyQ 提取码：kvei 】<br/>		  
+	  </p>
+          	</div><!--/media-body-->
+         </div><!--/教学单元-教学目标-技能目标media结束-->
+    </li><!--/第二个media列表项技能目标结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====-->    
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--第六篇结束 -->
+ </div><!-- ===========第六篇div container居中容器结束========= -->
+  <a name="d6"></a>
+ <div class="container"><!-- ===========步骤六container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤06<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>步骤06：素材加工_合成全景图</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+                    <p style="text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学生按组别分别使用PTgui、Lightroom、Photoshop、Pano2VR等软件处理素材图片，将素材图加工为质量较好的全景图。此步骤必须强调作品的质量意识，也是教学的重难点。图片拼接建议使用PTgui时，要掌握图片拼接的原理，并在最后输出为全景图之前要认真检查图片长宽比是否为2：1，输出的全景图中是否存在瑕疵，若存在瑕疵需掌握如何解决修复瑕疵的方法。在输出之前要对要输出的全景图做好相应的垂直线，确保输出的全景图的空间位置上关系正确。在处理无人机所拍摄的全景图时，需要将PTgui输出的全景图拖入到Photoshop中进行“补天“处理，需要掌握这个过程的原理步骤及技巧和如何去避免补天过程中“接缝”的出现，以及出现了“接缝”该如何去解决处理。</p>
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+   <li class="media"><!--第二个li media列表项开始-->
+   		<div class="media"><!--教学单元-教学目标-技能目标media开始-->
+            <div class="media-left">
+                <a href="#">
+                     <img class="media-object" src="images/ooopic_1444091673.png" alt="技能目标" width="64px" height="64px">
+                </a>
+            </div>
+  			<div class="media-body">
+   				<h4 class="media-heading">&nbsp;学习材料：</h4>
+    			<ul style="list-style:decimal;">
+					<li><a href="https://mooc1.chaoxing.com/course/204352215.html" target="new">原创全景图拼接合成教程</a></li>
+                    <li><a href="https://bbs2.720yun.com/article?id=128" target="new">720云PTgui拼接示范教程</a></li>
+					<li>全景图拼接效果对比<br/>
+							<a href="https://720yun.com/t/613jrsmfOv6?scene_id=26763477" target="_blank"><img src="images/avisite_pxxy.png" width="150" height="195" alt="_blank"/></a>&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;
+						    <a href="https://1cbwrostw.720think.com/t/1cbwrostw?def_sid=654292" target="_blank"><img src="images/avisite_pxxy2020.png" width="150" height="195" alt=""/></a>
+					</li>
+ 	 			</ul>
+          	</div><!--/media-body-->
+         </div><!--/教学单元-教学目标-技能目标media结束-->
+    </li><!--/第二个media列表项技能目标结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====-->
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--步骤六结束 -->
+ </div><!-- ===========步骤六div container居中容器结束========= -->
+ <a name="d7"></a>
+ <div class="container"><!-- ===========步骤七container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤07<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>步骤07：在全景云平台展示全景</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+				   <ul style="list-style:decimal;">
+                        <li>引导学生将创建好的全景图导入720云或720think等全景云平台中；</li>
+                        <li>使用全景云平台提供的编辑工具为全景作品添加各种交互方式；</li>
+					    <li>使用全景云平台提供的编辑工具为全景作品添加说明文字或配音配乐等完善作品功能；</li>
+                        <li>欣赏全景云平台中的商业级作品，找出特色明显的优秀作品，引导学生分析作品特点，研究制作方法。</li>
+                    </ul>
+	               <p style="text-align:center"><img src="images/720yunedit.jpg" width="80%" alt="720云编辑器"/></p>
+	               <p style="text-align:center; line-height:25px; font-size: 0.6em;">图3  720云全景系统制作工具</p> 
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+   <li class="media"><!--第二个li media列表项开始-->
+   		<div class="media"><!--教学单元-教学目标-技能目标media开始-->
+            <div class="media-left">
+                <a href="#">
+                     <img class="media-object" src="images/ooopic_1444091673.png" alt="技能目标" width="64px" height="64px">
+                </a>
+            </div>
+  			<div class="media-body">
+   				<h4 class="media-heading">&nbsp;学习材料：</h4>
+    			<ul style="list-style:decimal;">
+					<li><a href="https://bbs2.720yun.com/category/2" target="new">720云全景互动工具使用教程</a></li>
+                    <li><a href="https://www.720think.com/index.php?g=think720&m=home&a=course" target="new">720think全景互动工具使用教程</a></li>
+ 	 			</ul>
+          	</div><!--/media-body-->
+         </div><!--/教学单元-教学目标-技能目标media结束-->
+    </li><!--/第二个media列表项技能目标结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====-->
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--步骤六结束 -->
+ </div><!-- ===========步骤七div container居中容器结束========= -->
+ <a name="d8"></a>
+ <div class="container"><!-- ===========步骤八container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤 08<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>步骤08：作品比武，答辩评分</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+                    <p style="text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在课堂上各小组以上台答辩方式展示自己的全景作品，简要总结自己任务完成后的心得体会与不足，全班同学利用超星学习通APP实现全员参与互动评分。</p>
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====-->
+	  
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--步骤八结束 -->
+ </div><!-- ===========步骤八div container居中容器结束========= -->
+ <a name="d9"></a>
+ <div class="container"><!-- ===========步骤九container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤 09<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>步骤09：撰写实验报告</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+                    <p style="text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;撰写实验报告，总结实验成败经验教训。</p>
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====-->
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--步骤九结束 -->
+ </div><!-- ===========步骤九div container居中容器结束========= -->
+ <a name="d10"></a>
+ <div class="container"><!-- ===========步骤十container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤10<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>在Unity中利用全景图创建天空盒</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+                    <p style="text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学生尝试用自己创建的全景素材图用PTGUI软件分解成6幅图片，导入Unity中创建天空盒。</p>
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+   <li class="media"><!--第二个li media列表项开始-->
+   		<div class="media"><!--教学单元-教学目标-技能目标media开始-->
+            <div class="media-left">
+                <a href="#">
+                     <img class="media-object" src="images/ooopic_1444091673.png" alt="Unity天空盒" width="64px" height="64px">
+                </a>
+            </div>
+  			<div class="media-body">
+   				<h4 class="media-heading">&nbsp;学习材料：</h4>
+    			<ul style="list-style:none;">
+					<li><a href="images/07Unitysky1.pdf" target="new">全景图创建Unity天空盒教程</a></li>
+ 	 			</ul>
+				<p style="text-align:center"><img src="images/6side.jpg" width="80%" alt="720云编辑器"/></p>
+	            <p style="text-align:center; line-height:25px; font-size: 0.6em;">图4  全景图输出为立方体六表面</p> 
+          	</div><!--/media-body-->
+         </div><!--/教学单元-教学目标-技能目标media结束-->
+    </li><!--/第二个media列表项技能目标结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====-->
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--步骤六结束 -->
+ </div><!-- ===========步骤十div container居中容器结束========= -->
+ <a name="d11"></a>
+ <div class="container"><!-- ===========步骤十一container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤11<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>步骤11：在VR内容开发编辑器中应用全景图</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+                    <p style="text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实验课上将自己创建全景图素材导入到VR内容开发编辑器V-Lions及VMake中，实现简单切换交互，并再次使用VR设备观看自己的作品，体验自己创作的交互方式，学生成就感倍增，学习热情自然高涨，也增加外接全景项目的自信心。</p>
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+   <li class="media"><!--第二个li media列表项开始-->
+   		<div class="media"><!--教学单元-教学目标-技能目标media开始-->
+            <div class="media-left">
+                <a href="#">
+                     <img class="media-object" src="images/ooopic_1444091673.png" alt="技能目标" width="64px" height="64px">
+                </a>
+            </div>
+  			<div class="media-body">
+   				<h4 class="media-heading">&nbsp;学习材料：</h4>
+    			<ul style="list-style:decimal;">
+					<li><a href="images/VMakerEditor_help.pdf" target="new">V-Maker 虚拟现实课件编辑平台VMake帮助文件</a></li>
+                    <li><a href="images/VRPPT20180806.pdf" target="new">V-Lions虚拟现实内容编辑工具帮助文件</a></li>
+ 	 			</ul>
+          	</div><!--/media-body-->
+         </div><!--/教学单元-教学目标-技能目标media结束-->
+    </li><!--/第二个media列表项技能目标结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====-->
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--步骤六结束 -->
+ </div><!-- ===========步骤十一div container居中容器结束========= -->
+ <a name="d12"></a>
+ <div class="container"><!-- ===========步骤六container居中容器开始========= -->
+ <div class="panel panel-primary" ><!-- 教学单元媒体类型panel panel-primary--开始 -->
+  <div class="panel-heading" style="background-color:#444; height:50px; line-height:28px;">全景VR实验步骤12<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true" style="color:#FFF;">&nbsp;</span></a></p></div>
+  <div class="panel-body"><!-- 教学单元面板主体panel-body开始 -->  
+ 	<h3>步骤12：提出更有挑战性的问题供有兴趣有能力的同学去探索</h3>  <!--教学单元-教学目标开始-->     
+ 	<ul class="media-list" style="margin-left:40px;"><!--====教学单元-教学目标-知识目标媒体列表ul media-list开始 ====-->
+ 		<li class="media"><!--第一个li media列表项开始-->
+  		<div class="media"><!--教学单元-教学目标-知识目标media开始-->
+            <div class="media-left">
+                <a href="#">
+          			<img class="media-object" src="images/ooopic_1444091809.png" alt="知识目标" width="64px" height="64px">
+                </a>
+            </div>
+            <div class="media-body">
+                    <h4 class="media-heading">&nbsp;实验步骤：</h4>
+                    <p style="text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;假设不使用720云等全景平台，有没有其他方法也能在浏览器浏览全景图。</p>
+            </div><!--/media-body-->
+        </div><!--/教学单元-教学目标-知识目标media结束-->
+   </li><!--/第一个media列表项结束-->
+   <li class="media"><!--第二个li media列表项开始-->
+   		<div class="media"><!--教学单元-教学目标-技能目标media开始-->
+            <div class="media-left">
+                <a href="#">
+                     <img class="media-object" src="images/ooopic_1444091673.png" alt="技能目标" width="64px" height="64px">
+                </a>
+            </div>
+  			<div class="media-body">
+   				<h4 class="media-heading">&nbsp;学习材料：</h4>
+    			<ul style="list-style:decimal;">
+					<li><a href="http://www.hewebgl.com/article/articledir/1" target="new">threejs中文网</a></li>
+					<li>实时的3D可视化工具Lumion</li>
+ 	 			</ul>
+          	</div><!--/media-body-->
+         </div><!--/教学单元-教学目标-技能目标media结束-->
+    </li><!--/第二个media列表项技能目标结束-->
+    </ul><!--====/教学单元-教学目标-知识目标媒体列表ul media-list结束 ====-->
+  	</div>
+  </div><!-- /教学单元面板主体panel-body结束 -->  
+ </div><!-- 教学单元媒体类型panel panel-primary--步骤六结束 -->
+ </div><!-- ===========步骤十二div container居中容器结束========= -->
+</div><!-- /.container 教学单元主体内容结束 --> 
+
+  <!-- FOOTER -->
+<div class="container">
+      <footer>
+      <hr>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2018.10.01 &nbsp;萍乡学院&nbsp;·&nbsp;数字媒体技术教研室&nbsp;·&nbsp;虚拟现实技术课程组&nbsp;&nbsp;<a href="http://www.beian.miit.gov.cn" target="_blank">赣ICP备20001320号-1</a></p>
+      </footer>
+</div><!-- /.container --> 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<!--弹出视频播放窗口开始-->
+<script type="application/ecmascript">
+	function openVideo(url,name,iWidth,iHeight)
+		{
+		var url; //转向网页的地址;
+		var name; //网页名称，可为空;
+		var iWidth; //弹出窗口的宽度;
+		var iHeight; //弹出窗口的高度;
+		//window.screen.height获得屏幕的高，window.screen.width获得屏幕的宽
+		var iTop = (window.screen.height-30-iHeight)/2; //获得窗口的垂直位置;
+		var iLeft = (window.screen.width-10-iWidth)/2; //获得窗口的水平位置;
+		var obj=window.open(url,name,'height='+iHeight+',,innerHeight='+iHeight+',width='+iWidth+',innerWidth='+iWidth+',top='+iTop+',left='+iLeft+',toolbar=no,menubar=no,scrollbars=auto,resizeable=no,location=no,status=no');
+		}
+		setTimeout(function(){obj.document.title="丽晶课件" ;}, 1000) ;
+</script>
+<!--弹出视频播放窗口开始-->
+  </body>
+</html>

@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+#focusPic{
+	border:8px #F1F1F1 solid;
+	position:relative;
+	width:800px;
+	height:445px;
+	margin:0 auto 20px auto;
+	background-image:url(../page2/images/tb01.jpg);
+}
+#focusPic a{
+	text-decoration:none;
+	color:#000;
+}
+#focusPic #pre,#focusPic #next{
+	position:absolute;
+	top:180px;
+	display:inline-block;
+	width:20px;
+	line-height:20px;
+	background-color:rgba(200,200,200,0.6);
+	text-align:center;
+}
+#focusPic #pre{
+	left:5px;
+}
+#focusPic #next{
+	right:5px;
+}
+#focusPic #pre:hover,#focusPic #next:hover{
+	background-color:rgba(50,50,50,0.6);
+	color:#CCC;
+}
+.num{
+	position:absolute;
+	bottom:40px;
+	left:320px;
+	background-color:rgba(200,200,200,0.3);
+	width:90px;
+	border-radius:5px;
+	text-align:center;
+}
+.num a{
+	display:inline-block;
+	width:10px;
+	height:10px;
+	background-color:#B7B7B7;
+	border-radius:5px;
+}
+.num a:hover{
+	background-color:#F40;
+}

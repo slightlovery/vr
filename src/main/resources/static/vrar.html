@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/llj.ico">
+
+    <title>VR展厅/AR识图教学实验</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template
+    <link href="css/carousel.css" rel="stylesheet"> -->
+	<!-- 引入播放器 css 文件 -->
+        <link href="//imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.css" rel="stylesheet">
+        <!-- 如需在IE8、9浏览器中初始化播放器，浏览器需支持Flash并在页面中引入 -->
+        <!--[if lt IE 9]>
+        <script src="//imgcache.qq.com/open/qcloud/video/tcplayer/ie8/videojs-ie8.js"></script>
+        <![endif]-->
+        <!-- 如果需要在 Chrome Firefox 等现代浏览器中通过H5播放hls，需要引入 hls.js -->
+        <script src="//imgcache.qq.com/open/qcloud/video/tcplayer/lib/hls.min.0.8.8.js"></script>
+        <!-- 引入播放器 js 文件 -->
+        <script src="//imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.min.js"></script>
+        <!-- 示例 CSS 样式可自行删除 -->
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">VR 课程实验室</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#" style="color:#F9F9F9">VR <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true" style="color:lightblue;"></span> Lab</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="Panorama.html" target="new">VR全景实验</a></li>
+                <li><a href="vrar.html" target="new">VR展厅/AR识图实验</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-12">
+       	  <div class="page-header" style="text-align:center;">
+  				<h1>VR展厅/AR识图教学实验 <small>课程概要</small></h1>
+		  </div>
+		   <p style="text-align:left; line-height:25px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VR展厅是基于虚拟现实技术和互联网技术的一种足不出户也可以感受展览场馆现场的一种全新体验的VR作品，不仅有沉浸感而且有交互性。我校虚拟现实技术课程中的VR展厅 / AR识图教学实验，计划利用学生三维建模课程所制作的萍乡傩面具模型以及萍乡傩庙模型，或者根据萍乡博物馆傩面具展馆，利用Unity技术和一些虚拟现实内容开发编辑工具创建VR展厅作品，以及AR识图作品，展示萍乡历史文化瑰宝-萍乡傩面具，学习并掌握虚拟现实技术应用。 <br/></p>
+          <p style="text-align:left; line-height:25px;">实验目的： <br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.	巩固三维建模知识与技能；<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.	学会Unity中应用SteamVR及VRTK插件开发虚拟现实作品的技能技巧；（重点）<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.	掌握虚拟现实内容开发编辑器VMake及VLions的应用技巧；<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.	掌握利用Vuforia SDK制作AR识图作品的技能技巧；<br/>
+实验器材（软件）：<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTC VIVE VR眼ardown.jpgardown.jpgardown.jpgardown.jpgardown.jpg镜、单反相机。<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;软件 ：Unity 3D、V-Lions虚仿编辑器、SteamVR插件、VRTK插件、Vuforia SDK<br/><br/>
+       </p>
+
+<!--选项卡开始-->
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#bz01" aria-controls="bz01" role="tab" data-toggle="tab">萍乡傩面具模型</a></li>
+    <li role="presentation"><a href="#bz02" aria-controls="bz02" role="tab" data-toggle="tab">VR展厅作品演示</a></li>
+    <li role="presentation"><a href="#bz03" aria-controls="bz03" role="tab" data-toggle="tab">AR识图APP演示</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content" style="border:1px #eee thin; padding-top:20px; padding-left:20px; line-height:25px;border:thin #ccc solid;">
+	  
+	  <!--步骤01-->
+    <div role="tabpanel" class="tab-pane active" id="bz01">
+		<p style="text-align:left; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;萍乡傩面具模型（学生作品）<br>
+        <video id="player-container-id" preload="auto" width="720" height="405" playsinline webkit-playsinline x5-playsinline></video>
+		<!--腾讯播放器Script-->
+        <script>
+            var player = TCPlayer("player-container-id", { // player-container-id 为播放器容器ID，必须与html中一致
+                fileID: "5285890805865264519", // 请传入需要播放的视频fileID 必须
+                appID: "1251977905", // 请传入点播账号的appID 必须
+                autoplay: false //是否自动播放
+                //其他参数请在开发文档中查看
+            });
+        </script>			
+    </div>
+	  <!--步骤02-->
+    <div role="tabpanel" class="tab-pane" id="bz02">
+		<p style="text-align:left; line-height:25px;">萍乡傩庙VR作品展示<br/></p>
+		<video id="player-container-id1" preload="auto" width="720" height="405" playsinline webkit-playsinline x5-playsinline></video>
+         <script>
+            var player = TCPlayer("player-container-id1", { // player-container-id 为播放器容器ID，必须与html中一致
+                fileID: "5285890805865065458", // 请传入需要播放的视频fileID 必须
+                appID: "1251977905", // 请传入点播账号的appID 必须
+                autoplay: false //是否自动播放
+                //其他参数请在开发文档中查看
+            });
+        </script>
+	</div>
+	  <!--步骤03-->
+    <div role="tabpanel" class="tab-pane" id="bz03">
+        <p style="text-align:left; line-height:25px;">萍乡傩面具AR识图作品演示<br/></p>
+        <video id="player-container-id2" preload="auto" width="720" height="405" playsinline webkit-playsinline x5-playsinline></video>
+        <script>
+            var player = TCPlayer("player-container-id2", { // player-container-id 为播放器容器ID，必须与html中一致
+                fileID: "5285890805864812587", // 请传入需要播放的视频fileID 必须
+                appID: "1251977905", // 请传入点播账号的appID 必须
+                autoplay: false //是否自动播放
+                //其他参数请在开发文档中查看
+            });
+        </script>
+        
+   </div>  
+	  
+  </div>
+</div>
+      <!--选项卡结束-->
+ <div class="container" style="position:relative;">
+	 <br>
+	<p>附：萍乡傩面具AR识别图示例 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+    <p style="position: absolute; right:-10px; top:-290px;"><img src="images/ardown.jpg" style="width:80%;" /></p> <img src="images/shibie.jpg" width=100%  alt="萍乡傩面具AR识别图"/>
+</div>        
+      
+      <!-- FOOTER -->
+      <footer>
+      <hr>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+         <p>&copy; 2018.10.01 &nbsp;萍乡学院&nbsp;·&nbsp;数字媒体技术教研室&nbsp;·&nbsp;虚拟现实技术课程组&nbsp;&nbsp;<a href="http://www.beian.miit.gov.cn" target="_blank">赣ICP备20001320号-1</a></p>
+      </footer>
+ </div><!-- /. --> 
+</div><!-- /. -->
+
+</div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->----
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>
